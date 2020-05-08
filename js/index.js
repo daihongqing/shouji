@@ -23,6 +23,8 @@ window.onload = function () {
   if (browser.versions.android) {
     if (browser.versions.weixin || browser.versions.qq) {
       $('#href').click(function (e) {
+        e.preventDefault();
+        alert('anzhuo')
         $(".box").hide();
         $('.android').show();
       });
@@ -34,10 +36,11 @@ window.onload = function () {
   } else if (browser.versions.iPhone) {
     if (browser.versions.weixin || browser.versions.qq) {
       $('#href').click(function (e) {
+        e.preventDefault();
+        alert('pingguo')
         $(".box").hide();
         $('.iPhone').show();
       });
-
     } else {
       $(".box").show();
       $('.iPhone').hide();
