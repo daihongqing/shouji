@@ -25,14 +25,16 @@
           let href = document.getElementById('demo')
           href.href = './android.html'
         } else {
-          // window.location.href = './index.html'
+          let href = document.getElementById('demo')
+          href.href = 'http://www.lms.sduoei.com/upload/apk/sdfl.apk'
         }
       } else if (browser.versions.iPhone) {
         if (browser.versions.weixin || browser.versions.qq) {
           let href = document.getElementById('demo')
           href.href = './iPhone.html'
         } else {
-          // window.location.href = './index.html'
+          let href = document.getElementById('demo')
+          href.href = 'https://apps.apple.com/cn/app/%E6%9C%AA%E6%9D%A5%E5%AD%A6%E4%B9%A0/id1503434140'
         }
       }
     }
