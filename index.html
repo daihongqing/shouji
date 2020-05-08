@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>未来学习平台</title>
+  <script>
+    window.onload = function () {
+      var browser = {
+        versions: function () {
+          var u = navigator.userAgent, app = navigator.appVersion;
+          return {
+            trident: u.indexOf('Trident') > -1, //IE内核
+            presto: u.indexOf('Presto') > -1, //opera内核
+            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+            iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+            iPad: u.indexOf('iPad') > -1, //是否iPad
+            webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+            weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+            qq: u.match(/\sQQ/i) == " qq" //是否QQ
+          };
+        }(),
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+      }
+
+      if (browser.versions.android) {
+        if (browser.versions.weixin || browser.versions.qq) {
+          let href = document.getElementById('demo')
+          href.href = './android.html'
+        }
+      } else if (browser.versions.iPhone) {
+        if (browser.versions.weixin || browser.versions.qq) {
+          let href = document.getElementById('demo')
+          href.href = './iPhone.html'
+        }
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="box">
+    <header>
+      <div class="left">
+        <img src="./img/logo.png" alt="">
+        <div class="lx">
+          <h2>未来学习</h2>
+          <p>教育</p>
+        </div>
+
+      </div>
+      <div class="right">
+        <a id="demo" href=""></a>
+      </div>
+    </header>
+    <div class="center">
+      <ul class="picBox">
+        <li>
+          <img
+            src="http://p.ananas.chaoxing.com/star3/origin/424cbb259dc2c54145e129fdbec3f9e9.png?rw=1080&rh=1920&_fileSize=422556"
+            alt="">
+        </li>
+        <li>
+          <img
+            src="http://p.ananas.chaoxing.com/star3/origin/424cbb259dc2c54145e129fdbec3f9e9.png?rw=1080&rh=1920&_fileSize=422556"
+            alt="">
+        </li>
+        <li>
+          <img
+            src="http://p.ananas.chaoxing.com/star3/origin/424cbb259dc2c54145e129fdbec3f9e9.png?rw=1080&rh=1920&_fileSize=422556"
+            alt="">
+        </li>
+        <li>
+          <img
+            src="http://p.ananas.chaoxing.com/star3/origin/424cbb259dc2c54145e129fdbec3f9e9.png?rw=1080&rh=1920&_fileSize=422556"
+            alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="recom">
+      <h2>软件介绍</h2>
+      <p>
+        山大在线客户端是专门为山东大学继续教育学院打造的，为学生、教师、管理者提供的移动学习、移动教学、移动管理的专业平台。用户可通过山大在线客户端完成选课、在线学习、在线课程编辑、管理，教学业务处理，同时还可以进行在线实时讨论交流，并能够在海量电子资源库中进行搜索浏览图书、报纸等内容
+      </p>
+    </div>
+    <footer>
+      <h2>信息</h2>
+      <li>
+        <label>类别</label>
+        <span>教育学习</span>
+      </li>
+      <li>
+        <label>语言</label>
+        <span>中文</span>
+      </li>
+      <li>
+        <label>应用来源</label>
+        <span>官方</span>
+      </li>
+      <li>
+        <label>版权</label>
+        <span>©山大在线</span>
+      </li>
+    </footer>
+  </div>
+  <div class="android"></div>
+  <div class="iPhone"></div>
+</body>
+
+</html>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/index.js"></script>

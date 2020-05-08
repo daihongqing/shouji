@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+.box {
+  width: 96vw;
+  margin: 2vw auto;
+}
+.box header {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+}
+.box header .left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.box header .left img {
+  width: 15vw;
+  height: 15vw;
+  display: block;
+  margin-right: 2vw;
+}
+.box header .left .lx {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box header .left .lx h2 {
+  font-size: 1.7rem;
+  color: #000;
+}
+.box header .left .lx p {
+  color: #999;
+}
+.box header .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.box header .right a {
+  width: 15vw;
+  height: 4.5vh;
+  background: url('../img/download.png') center center / 100% 100% no-repeat;
+}
+.box .center {
+  margin-top: 2vh;
+  overflow-x: auto;
+}
+.box .center .picBox {
+  width: 146vw;
+}
+.box .center .picBox li {
+  display: inline-block;
+  width: 33vw;
+  margin-right: 3vw;
+}
+.box .center .picBox li img {
+  width: 100%;
+}
+.box .center .picBox li:last-child {
+  margin-right: 0;
+}
+.box .recom {
+  width: 100%;
+  margin-top: 2vh;
+  padding-bottom: 1vh;
+  border-bottom: solid 1px #ddd;
+}
+.box .recom h2 {
+  font-size: 1.8rem;
+}
+.box .recom p {
+  line-height: 2.3rem;
+  color: #999;
+}
+.box footer h2 {
+  font-size: 1.8rem;
+}
+.box footer li {
+  display: flex;
+  justify-content: space-between;
+}
+.box footer li label {
+  color: #999;
+}
+.android {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('img/and.png') no-repeat;
+  background-size: 100% 100%;
+}
+.iPhone {
+  display: none;
+}
