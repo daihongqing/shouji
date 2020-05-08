@@ -36,14 +36,16 @@
         if (browser.versions.weixin || browser.versions.qq) {
           let href = document.getElementById('demo')
           href.href = './android.html'
+        } else {
+          window.location.href = './index.html'
         }
       } else if (browser.versions.iPhone) {
         if (browser.versions.weixin || browser.versions.qq) {
           let href = document.getElementById('demo')
           href.href = './iPhone.html'
+        } else {
+          window.location.href = './index.html'
         }
-      }else{
-        window.location.href='./index.html'
       }
     }
 
