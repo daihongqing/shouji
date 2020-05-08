@@ -96,9 +96,15 @@ i {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url('img/and.png') no-repeat;
+  background: url('../img/and.png') no-repeat;
   background-size: 100% 100%;
 }
 .iPhone {
   display: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/iphone.png') no-repeat;
+  background-size: 100% 100%;
 }
